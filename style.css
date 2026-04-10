@@ -42,3 +42,27 @@ p {
     font-size: 18px;
     line-height: 1.8;
 }
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: white;
+    border-left: 4px solid #1a6b3c;
+    padding: 12px 20px;
+    margin-bottom: 8px;
+    border-radius: 0 8px 8px 0;
+    color: #555;
+    font-size: 16px;
+}
+.button {
+    display: inline-block;
+    background-color: #1a6b3c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
