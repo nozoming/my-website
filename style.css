@@ -127,3 +127,31 @@ button:hover {
     margin-top: 20px;
     font-weight: bold;
 }
+.recipe-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px 32px;
+    margin-bottom: 24px;
+    border: 1px solid #e0e0e0;
+}
+
+.recipe-card h3 {
+    color: #1a1a2e;
+    font-size: 20px;
+    margin-top: 0;
+    border-bottom: 2px solid #1a6b3c;
+    padding-bottom: 8px;
+}
+
+.recipe-card h4 {
+    color: #1a6b3c;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.recipe-card ol {
+    padding-left: 20px;
+    color: #444;
+    font-size: 15px;
+    line-height: 2;
+}
