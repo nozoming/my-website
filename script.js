@@ -45,3 +45,18 @@ if (btn) {
         }
     });
 }
+// スクロールでふわっと表示
+const fadeItems = document.querySelectorAll('.fade-in');
+if (fadeItems.length > 0) {
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    fadeItems.forEach(function (item) {
+        observer.observe(item);
+    });
+}
