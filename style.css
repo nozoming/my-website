@@ -288,3 +288,34 @@ footer {
     background-color: #1a6b3c;
     color: white;
 }
+.hero {
+    background: linear-gradient(135deg, #1a1a2e, #1a6b3c);
+    border-radius: 16px;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    color: white;
+    border-bottom: none;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.hero p {
+    color: #a8d8a8;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.hero .button {
+    background-color: white;
+    color: #1a6b3c;
+    margin-top: 28px;
+}
+
+.hero .button:hover {
+    background-color: #f0f9f4;
+    transform: translateY(-2px);
+}
