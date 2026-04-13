@@ -60,3 +60,22 @@ if (fadeItems.length > 0) {
         observer.observe(item);
     });
 }
+// タイピングアニメーション
+const typingTarget = document.querySelector('.hero h2');
+if (typingTarget) {
+    const text = typingTarget.textContent;
+    typingTarget.textContent = '';
+    let i = 0;
+
+    function typeNext() {
+        if (i < text.length) {
+            typingTarget.textContent += text[i];
+            i++;
+            setTimeout(typeNext, 100
+                
+            );
+        }
+    }
+
+    typeNext();
+}
