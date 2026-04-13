@@ -229,3 +229,31 @@ footer {
     white-space: nowrap;
     width: 40px;
 }
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    font-size: 15px;
+    color: #444;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.skill-icon {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
