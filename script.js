@@ -1,10 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const btn = document.getElementById('btn');
+// 背景色ボタン（index.html用）
+const colorButton = document.getElementById('colorButton');
+if (colorButton) {
+    const colors = ['#f5f5f5', '#e8f5e9', '#e3f2fd', '#fff8e1', '#fce4ec'];
+    let colorIndex = 0;
+
+    colorButton.addEventListener('click', function () {
+        colorIndex = (colorIndex + 1) % colors.length;
+        document.body.style.backgroundColor = colors[colorIndex];
+    });
+}
+
+// お問い合わせフォーム（contact.html用）
+const btn = document.getElementById('btn');
+if (btn) {
     const nameInput = document.getElementById('nameInput');
     const messageInput = document.getElementById('messageInput');
     const result = document.getElementById('result');
 
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function () {
         const name = nameInput.value;
         const message = messageInput.value;
 
@@ -16,4 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
             result.style.color = '#1a6b3c';
         }
     });
-});
+}
