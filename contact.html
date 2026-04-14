@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <title>お問い合わせ</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
     <header>
       <h1>Nozomiのウェブサイト</h1>
- <nav>
-  <a href="index.html">トップ</a>
-  <a href="profile.html">プロフィール</a>
-  <a href="recipe.html">レシピ</a>
-  <a href="contact.html">お問い合わせ</a>
-</nav>
+      <nav>
+        <a href="index.html">トップ</a>
+        <a href="profile.html">プロフィール</a>
+        <a href="recipe.html">レシピ</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
     </header>
     <main>
-      <h2>お問い合わせ</h2>
+      <section class="hero">
+        <h2>お問い合わせ</h2>
+        <p>お気軽にメッセージをどうぞ。</p>
+      </section>
+
       <input type="text" id="nameInput" placeholder="お名前">
       <input type="text" id="messageInput" placeholder="メッセージ">
       <button id="btn">送信する</button>
       <p id="result"></p>
     </main>
     <script src="script.js"></script>
- <footer>
+    <footer>
       <p>© 2026 Nozoming All Rights Reserved.</p>
-    </footer> 
-</body>
+    </footer>
+  </body>
 </html>
